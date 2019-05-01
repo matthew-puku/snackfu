@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootstrap-sass', '~> 3.4.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -72,5 +73,5 @@ gem "cloudinary", "~> 1.11"
 
 gem "activestorage-cloudinary-service", "~> 0.2.3"
 gem 'devise'
-gem "paperclip", "~> 3.0"
+gem "paperclip", "~> 6.0.0"
 gem "image_processing", "~> 1.9"
