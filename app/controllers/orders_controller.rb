@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   def new
-    Stripe.api_key = 'sk_test_HXZRxvngzUmRdxgZxaQM9Oyl00UrMRVkcZ'
+    Stripe.api_key = ENV['STRIPE_API_KEY_SECRET']
 
 @stripe_checkout_session = Stripe::Checkout::Session.create(
   payment_method_types: ['card'],
