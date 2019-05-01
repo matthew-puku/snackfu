@@ -44,6 +44,7 @@ group :development, :test do
   gem "dotenv-rails", ">= 2.5"
   # Use rspec for testing
   gem 'rspec-rails'
+  gem 'devise'
 
 end
 
