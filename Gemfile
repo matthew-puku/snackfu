@@ -44,7 +44,7 @@ group :development, :test do
   gem "dotenv-rails", ">= 2.5"
   # Use rspec for testing
   gem 'rspec-rails'
-  gem 'devise'
+  
 
 end
 
@@ -71,3 +71,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "cloudinary", "~> 1.11"
 
 gem "activestorage-cloudinary-service", "~> 0.2.3"
+gem 'devise'
+gem "paperclip", "~> 3.0"
+gem "image_processing", "~> 1.9"
