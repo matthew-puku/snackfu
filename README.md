@@ -23,11 +23,8 @@ Things you may want to cover:
 
 * ...
 
-This file should contain,
-
-* A link (URL) to your published App
-* A link to your GitHub repository
-* Ensure the repo is accessible by your Educators
+Website: https://blooming-tor-56677.herokuapp.com/
+Github: https://github.com/matthew-puku/snackfu
 
 # Description of your project, including,
 

@@ -44,8 +44,6 @@ group :development, :test do
   gem "dotenv-rails", ">= 2.5"
   # Use rspec for testing
   gem 'rspec-rails'
-  
-
 end
 
 group :development do
@@ -74,3 +72,4 @@ gem "activestorage-cloudinary-service", "~> 0.2.3"
 gem 'devise'
 gem "paperclip", "~> 3.0"
 gem "image_processing", "~> 1.9"
+
