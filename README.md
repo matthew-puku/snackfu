@@ -28,13 +28,30 @@ Github: https://github.com/matthew-puku/snackfu
 
 # Description of your project, including,
 
+The porject is a 2 way marketpace based on the buying and selling of snacks.
+
 ## Problem definition / purpose
 
+The purpose is for users to be able to buy and sell their favourite snacks anywhere in the world and have it shipped to them.
+
 ## Functionality / features
+
+Users can register an account
+Login/logout of their account
+Buy snacks
+Post a listings to sell snacks
+manage their profile
+manage their lisiting
 
 ## Screenshots
 
 ## Tech stack (e.g. html, css, deployment platform, etc)
+
+Ruby 
+Ruby on Rails
+Html
+Css
+Javascript
 
 ## Instructions on how to setup, configure and use your App.
 
@@ -56,6 +73,8 @@ Github: https://github.com/matthew-puku/snackfu
 
 ## Screenshots of Trello board(s)
 
+
+------------------------------------------------------------------------------------------------------------------------
 # Answers to the Short Answer questions (Section 2.2)
 
 ## What is the need (i.e. challenge) that you will be addressing in your project?
@@ -93,6 +112,8 @@ Heroku – is a third party company that allows developers to deploy and monitor
 
 ## Describe (in general terms) the data structure of marketplace apps that are similar to your own (e.g. eBay, Airbnb).
 
+Most purchased goods marketplaces are similar to our own as they all follow the same structure for user accessibility. These sites include; Ebay, Gumtree, Amazon, Etzy, etc.
+
 ## Discuss the database relations to be implemented.
 
 ## Describe your project’s models in terms of the relationships (active record associations) they have with each other.
@@ -120,7 +141,11 @@ US11: As a user I can delete my listing
 
 ## Describe the way tasks are allocated and tracked in your project.
 
+The team has set all tasks on a Trello Board where you allocate tasks individually and mark them for review then done where necessary.
+
 ## Discuss how Agile methodology is being implemented in your project.
+
+Each Trello task has been assigned a timeframe based on the complexity and length of that task. Tasks are labeled and sorted by shirt sizes (XS - XL), colors and time lengths. When a team member chooses to do a task, they drag that task from the "To-do" secton into the "Doing" section. Once that task is completed, the task is dragged into the review secton where the other team members merge the updated app and review. Once all memebers have the updated code and have reviewed it, the task is then dragged into the "Done" section.
 
 ## Provide an overview and description of your Source control process.
 
