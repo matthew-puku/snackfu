@@ -38,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass', '~> 3.4.1'
 
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -45,8 +47,6 @@ group :development, :test do
   gem "dotenv-rails", ">= 2.5"
   # Use rspec for testing
   gem 'rspec-rails'
-  
-
 end
 
 group :development do
@@ -75,3 +75,4 @@ gem "activestorage-cloudinary-service", "~> 0.2.3"
 gem 'devise'
 gem "paperclip", "~> 6.0.0"
 gem "image_processing", "~> 1.9"
+

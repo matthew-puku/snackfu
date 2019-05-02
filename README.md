@@ -23,11 +23,8 @@ Things you may want to cover:
 
 * ...
 
-This file should contain,
-
-* A link (URL) to your published App
-* A link to your GitHub repository
-* Ensure the repo is accessible by your Educators
+Website: https://blooming-tor-56677.herokuapp.com/
+Github: https://github.com/matthew-puku/snackfu
 
 # Description of your project, including,
 
@@ -82,6 +79,18 @@ solving?
 
 ## Detail any third party services that your App will use.
 
+ Rspec – is a third-party technology that is used to test the Ruby application via automated testing. It is the most frequently used testing library for Ruby in production applications. Automated testing prevents regression and speeds up development as well as leads to writing better code.
+
+Cloudinary - is a third party, cloud-based service that provides an end-to-end image and video management solution. The software is used so that video and images are not limited to local storage and can be accessed anywhere in the world.
+
+Stripe – is a third party, online payment service that handles all the clients transactions. Using server checkout, allows the rails application to handle payments without storing the clients information on your server which prevents any stolen card information if application were breached.
+
+Devise – is a popular third party authentication framework that handles all the controllers, models, and views that relate to authentication.  The gem comes with many different modules that allow for customization. The final product of adding the Devise gem, allows the rails application to create a login and signup form.
+
+Heroku – is a third party company that allows developers to deploy and monitor their software. Heroku is easy to use and is fully managed which means that the applications are maintained on their cloud servers. Using this service allows the app to be accessed any where in the world.
+
+  
+
 ## Describe (in general terms) the data structure of marketplace apps that are similar to your own (e.g. eBay, Airbnb).
 
 ## Discuss the database relations to be implemented.
@@ -92,7 +101,22 @@ solving?
 
 ## Provide User stories for your App.
 
+US1: As a user I can Register an account
+US2: As a user I can log into my account
+US3: As a user I can search for products
+US4: As a user I can sell products
+US5: As a user I can buy products
+US6: As a user I can upload images
+US7: As a user I can ship products
+US8: As a user I can write a review
+US9: As a user I can log out of my account
+US10: As a user I can edit my listing
+US11: As a user I can delete my listing
+
+
 ## Provide Wireframes for your App.
+
+
 
 ## Describe the way tasks are allocated and tracked in your project.
 
