@@ -75,3 +75,5 @@ gem "activestorage-cloudinary-service", "~> 0.2.3"
 gem 'devise'
 gem "image_processing", "~> 1.9"
 
+
+gem "jquery-rails", "~> 4.3"
