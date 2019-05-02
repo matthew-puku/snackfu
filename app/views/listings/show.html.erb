@@ -3,8 +3,8 @@
 <div class="row">
   <div class="col-md-6">
     <div class="thumbnail">
-    <%= image_tag @listing.image.url %>
-  </div>
+    <%= image_tag @listing.image %>
+    </div>
   </div>
   
 
@@ -13,9 +13,8 @@
       <h3><%= @listing.name %></h3>
         <p><%= number_to_currency(@listing.price) %></p>
         <p><%= @listing.description %></p>
-
+    </div>
   </div>
-</div>
 
 
 
