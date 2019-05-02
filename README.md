@@ -75,6 +75,7 @@ Users are able to view the home page and view listings without having to registe
 ![User](https://user-images.githubusercontent.com/47685649/57110768-098bb080-6d7d-11e9-9beb-ce59f6b6d735.png)
 
 ## Database Entity Relationship Diagrams
+![erd](https://user-images.githubusercontent.com/47685649/57112070-d7c91880-6d81-11e9-97e1-aa6271b00e22.PNG)
 
 # Details of planning process including,
 
