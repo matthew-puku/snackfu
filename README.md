@@ -81,7 +81,7 @@ Users are able to view the home page and view listings without having to registe
 ## Project plan & timeline
 
 ## Screenshots of Trello board(s)
-
+![trello capture](https://user-images.githubusercontent.com/47685649/57110834-4657a780-6d7d-11e9-9555-8b3c8ee587c9.PNG)
 
 ------------------------------------------------------------------------------------------------------------------------
 # Answers to the Short Answer questions (Section 2.2)
