@@ -68,6 +68,11 @@ Users are able to view the home page and view listings without having to registe
 ## Wireframes
 
 ![home](https://user-images.githubusercontent.com/47685649/57110523-2a073b00-6d7c-11e9-80ae-8cba3ae61317.png)
+![Lisiting-new](https://user-images.githubusercontent.com/47685649/57110738-ebbe4b80-6d7c-11e9-820a-494936267a98.png)
+![Lisiitng-show](https://user-images.githubusercontent.com/47685649/57110732-e3661080-6d7c-11e9-895a-4fe16697e25c.png)
+![Login-register](https://user-images.githubusercontent.com/47685649/57110752-f842a400-6d7c-11e9-9f55-f64b99196e0f.png)
+![Search](https://user-images.githubusercontent.com/47685649/57110764-0395cf80-6d7d-11e9-9d18-43faa9ff18a1.png)
+![User](https://user-images.githubusercontent.com/47685649/57110768-098bb080-6d7d-11e9-9beb-ce59f6b6d735.png)
 
 ## Database Entity Relationship Diagrams
 
