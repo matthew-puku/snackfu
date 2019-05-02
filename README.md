@@ -79,10 +79,16 @@ Javascript
 
 ## What is the need (i.e. challenge) that you will be addressing in your project?
 
+Snacks
+
 ## Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs 
 solving?
 
+The problem that we are addressing is that when people go travelling overseas, their favourite snacks  are never available in the local grocery shops( ie. tim tams, shapes). People need their favourite snacks to stay happy and to give them something to remind them of home.
+
 ## Describe the project will you be conducting and how. your App will address the needs.
+
+The project is a 2 way marketplacce that will let users buy and sell snacks from around the world.
 
 ## Describe the network infrastructure the App may be based on.
 
@@ -115,6 +121,8 @@ Heroku – is a third party company that allows developers to deploy and monitor
 Most purchased goods marketplaces are similar to our own as they all follow the same structure for user accessibility. These sites include; Ebay, Gumtree, Amazon, Etzy, etc.
 
 ## Discuss the database relations to be implemented.
+
+
 
 ## Describe your project’s models in terms of the relationships (active record associations) they have with each other.
 
