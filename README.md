@@ -55,6 +55,8 @@ Javascript
 
 ## Instructions on how to setup, configure and use your App.
 
+Users are able to view the home page and view listings without having to register and login first. If a user wishes to post a lisitng or purchase a lisitng then they are required to login fisrt or register if they have not done so. The navigation bar is present on every page and users have to option to register or login at any time. Once users have found their desired snack and wish to purchase, they will be directed to an orders page where checking out will lead to stripes payment page.
+
 # Design documentation including,
 
 ## Design process
