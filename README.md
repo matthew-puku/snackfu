@@ -67,6 +67,8 @@ Users are able to view the home page and view listings without having to registe
 
 ## Wireframes
 
+![home](https://user-images.githubusercontent.com/47685649/57110523-2a073b00-6d7c-11e9-80ae-8cba3ae61317.png)
+
 ## Database Entity Relationship Diagrams
 
 # Details of planning process including,
