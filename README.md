@@ -174,4 +174,8 @@ Each Trello task has been assigned a timeframe based on the complexity and lengt
 
 ## Discuss methods you will use to protect information and data.
 
+For this project we use Devise which is a third party technology that handles the users authentication. Devise use B-crypt to securely store user data and they have thousands of hours of code review and testing making them the most used authentication framework. We also use a third party company for payment information called Stripe.  Being a company that handles sensitive information, they take security very seriously and in doing so, they only store user data on their own servers.
+
 ## Research what your legal obligations are in relation to handling user data.
+
+Under the Privacy Act 1988, users data is protected from things such as; misuse, loss, and unauthorised access.  We are obligated under law not to use user data in any way where not authorised.
