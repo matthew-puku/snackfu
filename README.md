@@ -105,7 +105,11 @@ The project is a 2 way marketplacce that will let users buy and sell snacks from
 
 ## Identify and describe the software to be used in your App.
 
+The Software used in the application are; Ruby on Rails, Github, Heroku, Stripe, Cloudinary.
+
 ## Identify the database to be used in your App and provide a justification for your choice.
+
+Postgres was used in this application not only because we are required to but also becuase of its reliabilty and architecture and its free and open source. Postgres comes with many features that help manage and build an application.
 
 ## Identify and describe the production database setup (i.e. postgres instance).
 
@@ -133,7 +137,8 @@ Most purchased goods marketplaces are similar to our own as they all follow the 
 
 ## Discuss the database relations to be implemented.
 
-
+Refer to ERD diagram above
+A User has a one to many relationship with an Order and a one to many relationship with a Listing. A Listing has a one to many relationship with a review. An Order has a many to many relationship with a listing.
 
 ## Describe your project’s models in terms of the relationships (active record associations) they have with each other.
 
@@ -171,6 +176,8 @@ Each Trello task has been assigned a timeframe based on the complexity and lengt
 ## Provide an overview and description of your Testing process.
 
 ## Discuss and analyse requirements related to information system security.
+
+Information System Security refers to the process of keeping user safe and secure. This is covered in more detail on questions 22 and 23.
 
 ## Discuss methods you will use to protect information and data.
 
