@@ -28,15 +28,34 @@ Github: https://github.com/matthew-puku/snackfu
 
 # Description of your project, including,
 
+The porject is a 2 way marketpace based on the buying and selling of snacks.
+
 ## Problem definition / purpose
 
+The purpose is for users to be able to buy and sell their favourite snacks anywhere in the world and have it shipped to them.
+
 ## Functionality / features
+
+Users can register an account
+Login/logout of their account
+Buy snacks
+Post a listings to sell snacks
+manage their profile
+manage their lisiting
 
 ## Screenshots
 
 ## Tech stack (e.g. html, css, deployment platform, etc)
 
+Ruby 
+Ruby on Rails
+Html
+Css
+Javascript
+
 ## Instructions on how to setup, configure and use your App.
+
+Users are able to view the home page and view listings without having to register and login first. If a user wishes to post a lisitng or purchase a lisitng then they are required to login fisrt or register if they have not done so. The navigation bar is present on every page and users have to option to register or login at any time. Once users have found their desired snack and wish to purchase, they will be directed to an orders page where checking out will lead to stripes payment page.
 
 # Design documentation including,
 
@@ -48,6 +67,13 @@ Github: https://github.com/matthew-puku/snackfu
 
 ## Wireframes
 
+![home](https://user-images.githubusercontent.com/47685649/57110523-2a073b00-6d7c-11e9-80ae-8cba3ae61317.png)
+![Lisiting-new](https://user-images.githubusercontent.com/47685649/57110738-ebbe4b80-6d7c-11e9-820a-494936267a98.png)
+![Lisiitng-show](https://user-images.githubusercontent.com/47685649/57110732-e3661080-6d7c-11e9-895a-4fe16697e25c.png)
+![Login-register](https://user-images.githubusercontent.com/47685649/57110752-f842a400-6d7c-11e9-9f55-f64b99196e0f.png)
+![Search](https://user-images.githubusercontent.com/47685649/57110764-0395cf80-6d7d-11e9-9d18-43faa9ff18a1.png)
+![User](https://user-images.githubusercontent.com/47685649/57110768-098bb080-6d7d-11e9-9beb-ce59f6b6d735.png)
+
 ## Database Entity Relationship Diagrams
 
 # Details of planning process including,
@@ -55,15 +81,23 @@ Github: https://github.com/matthew-puku/snackfu
 ## Project plan & timeline
 
 ## Screenshots of Trello board(s)
+![trello capture](https://user-images.githubusercontent.com/47685649/57110834-4657a780-6d7d-11e9-9555-8b3c8ee587c9.PNG)
 
+------------------------------------------------------------------------------------------------------------------------
 # Answers to the Short Answer questions (Section 2.2)
 
 ## What is the need (i.e. challenge) that you will be addressing in your project?
 
+Snacks
+
 ## Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs 
 solving?
 
+The problem that we are addressing is that when people go travelling overseas, their favourite snacks  are never available in the local grocery shops( ie. tim tams, shapes). People need their favourite snacks to stay happy and to give them something to remind them of home.
+
 ## Describe the project will you be conducting and how. your App will address the needs.
+
+The project is a 2 way marketplacce that will let users buy and sell snacks from around the world.
 
 ## Describe the network infrastructure the App may be based on.
 
@@ -93,7 +127,11 @@ Heroku – is a third party company that allows developers to deploy and monitor
 
 ## Describe (in general terms) the data structure of marketplace apps that are similar to your own (e.g. eBay, Airbnb).
 
+Most purchased goods marketplaces are similar to our own as they all follow the same structure for user accessibility. These sites include; Ebay, Gumtree, Amazon, Etzy, etc.
+
 ## Discuss the database relations to be implemented.
+
+
 
 ## Describe your project’s models in terms of the relationships (active record associations) they have with each other.
 
@@ -120,7 +158,11 @@ US11: As a user I can delete my listing
 
 ## Describe the way tasks are allocated and tracked in your project.
 
+The team has set all tasks on a Trello Board where you allocate tasks individually and mark them for review then done where necessary.
+
 ## Discuss how Agile methodology is being implemented in your project.
+
+Each Trello task has been assigned a timeframe based on the complexity and length of that task. Tasks are labeled and sorted by shirt sizes (XS - XL), colors and time lengths. When a team member chooses to do a task, they drag that task from the "To-do" secton into the "Doing" section. Once that task is completed, the task is dragged into the review secton where the other team members merge the updated app and review. Once all memebers have the updated code and have reviewed it, the task is then dragged into the "Done" section.
 
 ## Provide an overview and description of your Source control process.
 
