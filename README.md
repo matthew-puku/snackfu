@@ -108,6 +108,7 @@ The application will be deployed using Heroku which use HTTP to route their seve
 ## Identify and describe the software to be used in your App.
 
 The Software used in the application are; Ruby on Rails, Github, Heroku, Stripe, Cloudinary.
+For a description of what each gem does please refer to question 10.
 
 ## Identify the database to be used in your App and provide a justification for your choice.
 
