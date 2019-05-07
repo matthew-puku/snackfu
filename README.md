@@ -99,9 +99,11 @@ The problem that we are addressing is that when people go travelling overseas, t
 
 ## Describe the project will you be conducting and how. your App will address the needs.
 
-The project is a 2 way marketplacce that will let users buy and sell snacks from around the world.
+The project is a 2 way marketplace that will let users buy and sell snacks from around the world.
 
 ## Describe the network infrastructure the App may be based on.
+
+The application will be deployed using Heroku which use HTTP to route their severs and it’s what is used to transmit the data. The data is requested by a set of routers which determine where and how the web page will be displayed.
 
 ## Identify and describe the software to be used in your App.
 
