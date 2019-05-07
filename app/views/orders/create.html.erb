@@ -1,0 +1,22 @@
+<h1>Your Order</h1>
+
+<h2>Thank you for your order!</h2>
+
+<table>
+<tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Price</th>
+</tr>
+<tr>
+  <td><%= @listing.name %></td>
+  <td><%= @listing.description %></td>
+  <td><%= number_to_currency(@listing.price) %></td>
+</tr>
+<tr>
+    <th colspan="2">Total</th>
+    <th><%= number_to_currency(@listing.price) %></th>
+</table>
+<p>
+    @listing.image.url
+</p>
