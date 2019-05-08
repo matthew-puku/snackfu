@@ -99,13 +99,20 @@ The problem that we are addressing is that when people go travelling overseas, t
 
 ## Describe the project will you be conducting and how. your App will address the needs.
 
-The project is a 2 way marketplacce that will let users buy and sell snacks from around the world.
+The project is a 2 way marketplace that will let users buy and sell snacks from around the world.
 
 ## Describe the network infrastructure the App may be based on.
 
+The application will be deployed using Heroku which use HTTP to route their severs and it’s what is used to transmit the data. The data is requested by a set of routers which determine where and how the web page will be displayed.
+
 ## Identify and describe the software to be used in your App.
 
+The Software used in the application are; Ruby on Rails, Github, Heroku, Stripe, Cloudinary.
+For a description of what each gem does please refer to question 10.
+
 ## Identify the database to be used in your App and provide a justification for your choice.
+
+Postgres was used in this application not only because we are required to but also becuase of its reliabilty and architecture and its free and open source. Postgres comes with many features that help manage and build an application.
 
 ## Identify and describe the production database setup (i.e. postgres instance).
 
@@ -133,7 +140,8 @@ Most purchased goods marketplaces are similar to our own as they all follow the 
 
 ## Discuss the database relations to be implemented.
 
-
+Refer to ERD diagram above
+A User has a one to many relationship with an Order and a one to many relationship with a Listing. A Listing has a one to many relationship with a review. An Order has a many to many relationship with a listing.
 
 ## Describe your project’s models in terms of the relationships (active record associations) they have with each other.
 
@@ -172,6 +180,12 @@ Each Trello task has been assigned a timeframe based on the complexity and lengt
 
 ## Discuss and analyse requirements related to information system security.
 
+Information System Security refers to the process of keeping user safe and secure. This is covered in more detail on questions 22 and 23.
+
 ## Discuss methods you will use to protect information and data.
 
+For this project we use Devise which is a third party technology that handles the users authentication. Devise use B-crypt to securely store user data and they have thousands of hours of code review and testing making them the most used authentication framework. We also use a third party company for payment information called Stripe.  Being a company that handles sensitive information, they take security very seriously and in doing so, they only store user data on their own servers.
+
 ## Research what your legal obligations are in relation to handling user data.
+
+Under the Privacy Act 1988, users data is protected from things such as; misuse, loss, and unauthorised access.  We are obligated under law not to use user data in any way where not authorised.
