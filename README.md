@@ -63,6 +63,8 @@ Users are able to view the home page and view listings without having to registe
 
 ## User stories
 
+User stories are provided below.
+
 ## A workflow diagram of the user journey/s.
 
 ## Wireframes
@@ -93,7 +95,7 @@ Users are able to view the home page and view listings without having to registe
 Snacks
 
 ## Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs 
-solving?
+## solving?
 
 The problem that we are addressing is that when people go travelling overseas, their favourite snacks  are never available in the local grocery shops( ie. tim tams, shapes). People need their favourite snacks to stay happy and to give them something to remind them of home.
 
@@ -112,7 +114,7 @@ For a description of what each gem does please refer to question 10.
 
 ## Identify the database to be used in your App and provide a justification for your choice.
 
-Postgres was used in this application not only because we are required to but also becuase of its reliabilty and architecture and its free and open source. Postgres comes with many features that help manage and build an application.
+Postgres was used in this application not only because we are required to but also becuase of its reliabilty and architecture and it's free and open source. Postgres comes with many features that help manage and build an application.
 
 ## Identify and describe the production database setup (i.e. postgres instance).
 
@@ -149,7 +151,7 @@ A User has a one to many relationship with an Order and a one to many relationsh
 
 ## Provide User stories for your App.
 
-US1: As a user I can Register an account
+US1: As a user I can register an account
 US2: As a user I can log into my account
 US3: As a user I can search for products
 US4: As a user I can sell products
@@ -164,11 +166,11 @@ US11: As a user I can delete my listing
 
 ## Provide Wireframes for your App.
 
-
+Wireframes provided above
 
 ## Describe the way tasks are allocated and tracked in your project.
 
-The team has set all tasks on a Trello Board where you allocate tasks individually and mark them for review then done where necessary.
+The team has set all tasks on a Trello Board where you allocate tasks individually and mark them for review. Once the team has reviewed the task the it is marked as done.
 
 ## Discuss how Agile methodology is being implemented in your project.
 
@@ -180,7 +182,7 @@ Each Trello task has been assigned a timeframe based on the complexity and lengt
 
 ## Discuss and analyse requirements related to information system security.
 
-Information System Security refers to the process of keeping user safe and secure. This is covered in more detail on questions 22 and 23.
+Information System Security refers to the process of keeping user data safe and secure. This is covered in more detail on questions 22 and 23.
 
 ## Discuss methods you will use to protect information and data.
 
