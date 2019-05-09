@@ -74,5 +74,7 @@ gem "cloudinary", "~> 1.11"
 gem "activestorage-cloudinary-service", "~> 0.2.3"
 gem 'devise'
 gem "image_processing", "~> 1.9"
-
+gem "paperclip", "~> 6.0.0"
 gem "jquery-rails", "~> 4.3"
+gem 'font-awesome-sass', '~> 5.8.1'
+ 
