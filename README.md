@@ -205,6 +205,8 @@ Each Trello task has been assigned a timeframe based on the complexity and lengt
 
 ## Provide an overview and description of your Source control process.
 
+Source control is the process of logging and controlling changes made to the application so that they can be recalled if need be. The method we used was local version control where individuals could work from their own systems and code different sections. They would create a feature branch and once completed section they would merge it with the master branch then push it up to github. This method while helpful in the fact we could all work on separate tasks, has created many conflicts. This has resulted in reverting to older commits.
+
 ## Provide an overview and description of your Testing process.
 
 ## Discuss and analyse requirements related to information system security.
