@@ -121,6 +121,14 @@ Postgres was used in this application not only because we are required to but al
 
 ## Describe the architecture of your App.
 
+Since we are using Ruby on Rails for this project the architecture features are Models, Views, and Controllers.
+
+The Models are used to interact with their related elements in a database and represents the information in the application. 
+
+The Views are the front-end visuals that the user sees using mainly HTML and CSS, embedded with ruby.
+
+Controllers are the middle man between Models and Views. The Controllers process the Models data and pass it through to the Views.
+
 ## Explain the different high-level components (abstractions) in your App.
 
 ## Detail any third party services that your App will use.
