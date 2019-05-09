@@ -147,22 +147,49 @@ A User has a one to many relationship with an Order and a one to many relationsh
 
 ## Describe your project’s models in terms of the relationships (active record associations) they have with each other.
 
+Users model has_many listings
+
+Users model has_many orders
+
+Listing model has_many order
+
+Orders model has_many listings
+
+Lisitng model has_many reviews ???
+
+Reviews belong_to Listings
+
+Address belongs_to Users
+
+Address belongs_to Listings
+
+Address belongs_to Order
+
 ## Provide your database schema design.
 
 ## Provide User stories for your App.
 
 US1: As a user I can register an account
-US2: As a user I can log into my account
-US3: As a user I can search for products
-US4: As a user I can sell products
-US5: As a user I can buy products
-US6: As a user I can upload images
-US7: As a user I can ship products
-US8: As a user I can write a review
-US9: As a user I can log out of my account
-US10: As a user I can edit my listing
-US11: As a user I can delete my listing
 
+US2: As a user I can log into my account
+
+US3: As a user I can search for products
+
+US4: As a user I can sell products
+
+US5: As a user I can buy products
+
+US6: As a user I can upload images
+
+US7: As a user I can ship products
+
+US8: As a user I can write a review
+
+US9: As a user I can log out of my account
+
+US10: As a user I can edit my listing
+
+US11: As a user I can delete my listing
 
 ## Provide Wireframes for your App.
 
