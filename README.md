@@ -23,14 +23,18 @@ Things you may want to cover:
 
 * ...
 
-Website: https://blooming-tor-56677.herokuapp.com/
+Sanckfu Website: https://blooming-tor-56677.herokuapp.com/
 Github: https://github.com/matthew-puku/snackfu
 
+## Versions:
+
+Ruby version - 2.6.2
+Ruby on Rails version - 5.2.3
+
 # Description of your project, including,
-
-The porject is a 2 way marketpace based on the buying and selling of snacks.
-
 ## Problem definition / purpose
+
+The project is a 2 way marketpace based on the buying and selling of snacks.
 
 The purpose is for users to be able to buy and sell their favourite snacks anywhere in the world and have it shipped to them.
 
