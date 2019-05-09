@@ -85,6 +85,7 @@ User stories are provided below.
 ![timeline](https://user-images.githubusercontent.com/47685649/57111931-4a85c400-6d81-11e9-9e3f-d29587b68eb7.PNG)
 
 ## Screenshots of Trello board(s)
+Link to Trello Board: https://trello.com/b/FThU2MiO/tasks
 ![trello capture](https://user-images.githubusercontent.com/47685649/57110834-4657a780-6d7d-11e9-9555-8b3c8ee587c9.PNG)
 
 ------------------------------------------------------------------------------------------------------------------------
