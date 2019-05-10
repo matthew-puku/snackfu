@@ -76,3 +76,4 @@ gem 'devise'
 gem "image_processing", "~> 1.9"
 
 gem "jquery-rails", "~> 4.3"
+gem 'font-awesome-sass', '~> 5.8.1'
