@@ -8,9 +8,7 @@ class ListingsController < ApplicationController
     @listings = Listing.where(user: current_user).order("created_at DESC")
   end
 
-
   def index
-   
     search_term = params[:search]
   
       if search_term.blank?
@@ -72,7 +70,6 @@ class ListingsController < ApplicationController
     end
   end
   
-
   # DELETE /listings/1
   # DELETE /listings/1.json
   def destroy
@@ -84,22 +81,20 @@ class ListingsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_listing
-      @listing = Listing.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def listing_params
-      params.require(:listing).permit(:name, :description, :price, :image, :country)
-    end
-    
-    def check_user
-      if current_user != @listing.user
-        redirect_to root_url, alert: "sorry, this listing belongs to someone else"
-
-      end
-    end
-
-
+  # Use callbacks to share common setup or constraints between actions.
+  def set_listing
+    @listing = Listing.find(params[:id])
   end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def listing_params
+    params.require(:listing).permit(:name, :description, :price, :image, :country)
+  end
+  
+  def check_user
+    if current_user != @listing.user
+      redirect_to root_url, alert: "sorry, this listing belongs to someone else"
+
+    end
+  end
+end
