@@ -10,6 +10,7 @@ class OrdersController < ApplicationController
     Stripe.api_key = ENV['STRIPE_API_KEY_SECRET']
 
     @stripe_checkout_session = Stripe::Checkout::Session.create(
+      customer_email: @buyer.email,
       payment_method_types: ['card'],
       line_items: [{
         name: @listing.name,
@@ -19,11 +20,11 @@ class OrdersController < ApplicationController
         currency: 'aud',
         quantity: 1,
       }],
-      success_url: 'http://localhost:3000/success',
+      success_url: url_for(action: "success"), #orders_path action: "POST",
       cancel_url: 'http://localhost:3000/cancel',
     )
   end
   
-  def create
+  def success
   end
 end

@@ -18,6 +18,8 @@
   <button id="checkout">Checkout</button>
 </p>
 
+<%= @stripe_checkout_session.success_url %>
+
 <script src="https://js.stripe.com/v3/"></script>
 
 <script>
