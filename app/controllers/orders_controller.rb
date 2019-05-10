@@ -1,6 +1,11 @@
 class OrdersController < ApplicationController
   def new
-    @listing = Listing.find(params[:listing_id])
+    @order = Order.new(
+      listing: Listing.find(params[:listing_id]),
+      user: current_user,
+      )
+    @listing = @order.listing
+    @buyer = @order.user
 
     Stripe.api_key = ENV['STRIPE_API_KEY_SECRET']
 

@@ -2,16 +2,17 @@
 
 <table>
 <tr>
-  <th><%= @listing.name %></th>
-  
-  <th><%= number_to_currency(@listing.price) %></th>
+  <td><%= @listing.name %></td>
+  <td>1</td> <!-- quantity -->
+  <td><%= number_to_currency(@listing.price) %></td>
 </tr>
 <tr>
-  <td colspan="2"><%= @listing.description %></td>
+  <td colspan="2">Shipping from <%= @listing.address.country %></td>
+  <td>FREE</td>
 </tr>
 <tr>
-  <th>Total</th>
-  <th><%= number_to_currency(@listing.price) %></th>
+  <td colspan="2">Total</td>
+  <td><%= number_to_currency(@listing.price) %></td>
 </table>
 <p>
   <button id="checkout">Checkout</button>
