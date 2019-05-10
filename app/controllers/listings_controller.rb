@@ -30,12 +30,17 @@ class ListingsController < ApplicationController
   # POST /listings
   # POST /listings.json
   def create
-    @listing = Listing.new(listing_params)
+    @listing = Listing.new(
+      name: listing_params[:name],
+      description: listing_params[:description],
+      price: listing_params[:price],
+      )
     @listing.image.attach(listing_params[:image])
     @listing.user_id = current_user.id
+    @listing.address = Address.new(country: listing_params[:country], name: "n/a", address: "n/a")
 
     respond_to do |format|
-      if @listing.save
+      if @listing.save && @listing.address.save
         format.html { redirect_to listing_path(@listing.id), notice: 'Listing was successfully created.' }
         format.json { render :show, status: :created, location: @listing }
       else
@@ -78,7 +83,7 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:name, :description, :price, :image)
+      params.require(:listing).permit(:name, :description, :price, :image, :country)
     end
     
     def check_user

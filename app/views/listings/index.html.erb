@@ -9,7 +9,11 @@
       <div class="col-md-4">
         <div class= "thumbnail">
          
-          <%= image_tag(listing.image.variant(resize: "100x100")) %>
+          <%= if listing.image.attached?
+                image_tag(listing.image.variant(resize: "100x100"))
+              else
+                "No image available" 
+              end %>
 
 
 
