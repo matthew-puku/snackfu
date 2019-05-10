@@ -11,12 +11,12 @@ class ListingsController < ApplicationController
   def index
     search_term = params[:search]
   
-      if search_term.blank?
-          @listings = Listing.all
-      else
-          @listings = Listing.where("upper(name) LIKE ?", "%#{search_term.upcase}%")
-      end
-      # @listings = Listing.all.order("created_at DESC")
+    if search_term.blank?
+      @listings = Listing.all
+    else
+      @listings = Listing.where("upper(name) LIKE ?", "%#{search_term.upcase}%")
+    end
+    # @listings = Listing.all.order("created_at DESC")
   end
 
   # GET /listings/1
