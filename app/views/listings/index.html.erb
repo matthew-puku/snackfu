@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h1>Fresh and Healthy Snacks for all.</h1>
+  <h1>Snacks for all.</h1>
   <h2>Discover one-of-a-kind items</h2>
 </div>
 
@@ -27,7 +27,8 @@
 </div>
 
 <br>
-
-<% if user_signed_in? %>
-<%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
-<% end %>
+<div class="jumbotronfoot">
+  <% if user_signed_in? %>
+  <%= link_to image_tag('jumbo.png',width: '1000', height: '350', alt: 'New Listing'), new_listing_path, class: "btn btn-link",title: 'New Listing' %>     
+  <% end %>
+</div>
