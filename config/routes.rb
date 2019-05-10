@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'pages/about'
   get 'pages/contact'
   get 'seller' => "listings#seller"
-  get 'orders/new'
+  resources :orders
   get 'success', to: "orders#create"
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

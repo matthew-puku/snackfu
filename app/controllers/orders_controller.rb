@@ -1,7 +1,6 @@
 class OrdersController < ApplicationController
   def new
-    the_listing_id = params[:listing_id]
-    @listing = Listing.find(the_listing_id)
+    @listing = Listing.find(params[:listing_id])
 
     Stripe.api_key = ENV['STRIPE_API_KEY_SECRET']
 
@@ -10,7 +9,7 @@ class OrdersController < ApplicationController
       line_items: [{
         name: @listing.name,
         description: @listing.description,
-        images: @listing.image.url,
+        # images: @listing.image,
         amount: (@listing.price * 100).to_i ,
         currency: 'aud',
         quantity: 1,

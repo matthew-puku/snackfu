@@ -2,40 +2,35 @@
 
 <table>
 <tr>
-  <th>Name</th>
-  <th>Description</th>
-  <th>Price</th>
+  <th><%= @listing.name %></th>
+  
+  <th><%= number_to_currency(@listing.price) %></th>
 </tr>
 <tr>
-  <td><%= @listing.name %></td>
-  <td><%= @listing.description %></td>
-  <td><%= number_to_currency(@listing.price) %></td>
+  <td colspan="2"><%= @listing.description %></td>
 </tr>
 <tr>
-    <th colspan="2">Total</th>
-    <th><%= number_to_currency(@listing.price) %></th>
+  <th>Total</th>
+  <th><%= number_to_currency(@listing.price) %></th>
 </table>
 <p>
-  @listing.image.url
-</p>
-<P>
-    <button>Checkout</button>
+  <button id="checkout">Checkout</button>
 </p>
 
 <script src="https://js.stripe.com/v3/"></script>
 
 <script>
-    var stripe = Stripe('pk_test_r1EmAHl6wPYYC0jA3wwdTYHC00JafccmBa');
+  var stripe = Stripe('pk_test_r1EmAHl6wPYYC0jA3wwdTYHC00JafccmBa');
 
-    function goToCheckout() {
-    stripe.redirectToCheckout({
-    sessionId: '<%= @stripe_checkout_session.id %>',
-    }).then(function (result) {
-    // If `redirectToCheckout` fails due to a browser or network
-    // error, display the localized error message to your customer
-    // using `result.error.message`.
-    });
-    }
-    var button = document.querySelector('button');
-    button.addEventListener('click', goToCheckout);
+  function goToCheckout() {
+  stripe.redirectToCheckout({
+  sessionId: '<%= @stripe_checkout_session.id %>',
+  }).then(function (result) {
+  // If `redirectToCheckout` fails due to a browser or network
+  // error, display the localized error message to your customer
+  // using `result.error.message`.
+  });
+  }
+  var button = document.querySelector('#checkout');
+  button.addEventListener('click', goToCheckout);
 </script>
