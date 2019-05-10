@@ -16,7 +16,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
-             <li><%= link_to "Manage Listings", seller_path %></li> 
+              <li><%= link_to "Manage Listings", seller_path %></li>
               <li><%= link_to "Edit Profile", edit_user_registration_path %></li> 
               <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
             <% else %>
@@ -25,10 +25,17 @@
             <% end %>
         </ul>
       </div>
-      <div class="search">
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+    <div class="search">
+      <form class="form-inline my-2 my-lg-0" action="<%= listings_path %>">
+        <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit", class: btn btn-primary>Search</button>
-      </form>
-      </div>
-    </nav>
+      </form>    
+    </div>
+
+    <% if @search_term %>
+      <p>
+        Found <%= pluralize(@listings.count, "listings") %> matching <em><%= @search_term %></em>
+      </p>
+    <% end %>
+ </nav>
