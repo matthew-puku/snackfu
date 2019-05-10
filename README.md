@@ -99,8 +99,7 @@ Link to Trello Board: https://trello.com/b/FThU2MiO/tasks
 
 Snacks
 
-## Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs 
-## solving?
+## Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs solving?
 
 The problem that we are addressing is that when people go travelling overseas, their favourite snacks  are never available in the local grocery shops( ie. tim tams, shapes). People need their favourite snacks to stay happy and to give them something to remind them of home.
 
@@ -179,6 +178,8 @@ Address belongs_to Listings
 Address belongs_to Order
 
 ## Provide your database schema design.
+
+Provided above.
 
 ## Provide User stories for your App.
 
