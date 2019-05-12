@@ -10,7 +10,6 @@ class OrdersController < ApplicationController
     Stripe.api_key = ENV['STRIPE_API_KEY_SECRET']
 
     @stripe_checkout_session = Stripe::Checkout::Session.create(
-      customer_email: @buyer.email,
       payment_method_types: ['card'],
       line_items: [{
         name: @listing.name,
