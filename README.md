@@ -38,19 +38,19 @@ Setup is fairly involved. Rather than give a step-by-step guide on each operatio
 * Clone this repo to the local machine
 * Create in the root repo directory a file called ".env"
 * In .env, fill in the following information:
-** `DB_USERNAME=`
-** `DB_PASSWORD=`
-** `CLOUDINARY_CLOUD_NAME=`
-** `CLOUDINARY_API_KEY=`
-** `CLOUDINARY_API_SECRET=`
-** `STRIPE_API_KEY_SECRET=`
+* `DB_USERNAME=`
+* `DB_PASSWORD=`
+* `CLOUDINARY_CLOUD_NAME=`
+* `CLOUDINARY_API_KEY=`
+* `CLOUDINARY_API_SECRET=`
+* `STRIPE_API_KEY_SECRET=`
 * In app/views/orders/new.html.erb, replace the public Stripe key with your own.
 * By default, the app uses local storage for image upload when run locally. To test cloud-based image upload, navigate to config/environments/development.rb and change this line: `config.active_storage.service = :local` to `config.active_storage.service = :cloudinary`
 * Navigate to the repo directory in the command line and run:
-** `bundle install`
-** `rails db:create`
-** `rails db:migrate`
-** `rails s`
+* `bundle install`
+* `rails db:create`
+* `rails db:migrate`
+* `rails s`
 * Visit the website on your local server. By default, this is at http://localhost:3000/
 
 Users are able to view the home page and view listings without having to register and login first. If a user wishes to post a listing or purchase a listing, they must login or register. The navigation bar is present on every page and users have to option to register or login at any time. Once users have found their desired snack and wish to purchase, they will be directed to an orders page where checking out will lead to stripes payment page.
@@ -109,32 +109,18 @@ The application is deployed on Heroku. Heroku has its own peculiar language. Onc
 
 ## 5. Identify and describe the software to be used in your App.
 
-* Ruby
-** A powerful interpreted language. Can be very powerful, expressive, and readable, but its lack of constraints also makes it easy to write bugs. Because it's an interpreted language, it is slow and not well suited to computationally intense applications like video rendering. For low-intensity webapps like SnackFu, it is ideal.
-* Ruby on Rails
-** A web development framework. Allows for speedy building of web applications using MVC paradigm.
-** Requires very little configuration relative to other web frameworks
-* Postgres
-** An open-source SQL implementation. For more detail, see questions 6 and 7.
-* HTML & CSS
-** HTML is a simple markup language used to structure web documents. CSS instructs web browsers on how to render the HTML.
-* Javascript
-** A trainwreck of an interpreted language. Its one advantage over Ruby, Python, or any other sane programming language is that it runs natively in web browsers. Its use in this app is limited to Bootstrap (which abstracts away all actual javascript programming) and Stripe (which provides a small script to copy and paste into webpages where it's required).
-* Bootstrap
-** The original way to get beautiful, responsive web layouts to display consistently without destroying developer sanity. It is used in this app because native CSS implementations are not quite up to scratch on all modern browsers. Additionally, our main front-end programmer was familiar with its use.
-* Imagemagick, and its tie-in gem image_processing
-** Image processing software, used in SnackFu to resize images. The image_processing gem is used to relay commands to Imagemagick, which is a seperate program which must be installed locally. Heroku has it installed by default.
-* Rspec
-** Used to test the Ruby application via automated testing. It is the most frequently used testing library for Ruby in production applications. Automated testing prevents regression and speeds up development and leads to writing better code.
-* Devise
-** A popular third party authentication framework that handles all the controllers, models, and views that relate to authentication.  The gem comes with many different modules that allow for customization. The final product of adding the Devise gem, allows the rails application to create a login and signup form.
-* Cloudinary, Font-Awesome & Stripe gems
-** Interface with Cloudinary, font-awesome and Stripe, which are third party services described in more detail in question 10.
-* dotenv-rails
-** A gem that allows for simple implementation of environment variables for development and testing environments. It's important to keep passwords in a file which is not pushed to remote references. Dotenv provides simple facility for doing this.
-
-The Software used in the application are; Ruby on Rails, Heroku, Stripe, Cloudinary.
-For a description of what each gem does please refer to question 10.
+* Ruby, a powerful interpreted language. Can be very powerful, expressive, and readable, but its lack of constraints also makes it easy to write bugs. Because it's an interpreted language, it is slow and not well suited to computationally intense applications like video rendering. For low-intensity webapps like SnackFu, it is ideal.
+* Ruby on Rails, a web development framework. Allows for speedy building of web applications using MVC paradigm. It requires very little configuration relative to other web frameworks
+* Postgres, an open-source SQL implementation. For more detail, see questions 6 and 7.
+* HTML, a simple markup language used to structure web documents.
+* CSS, which instructs web browsers how to render the HTML.
+* Javascript, a trainwreck of an interpreted language. Its one advantage over Ruby, Python, or any other sane programming language is that it runs natively in web browsers. Its use in this app is limited to Bootstrap (which abstracts away all actual javascript programming) and Stripe (which provides a small script to copy and paste into webpages where it's required).
+* Bootstrap, the original way to get beautiful, responsive web layouts to display consistently without destroying developer sanity. It is used in this app because native CSS implementations are not quite up to scratch on all modern browsers. Additionally, our main front-end programmer was familiar with its use.
+* Imagemagick (and its tie-in gem image_processing), image processing software, used in SnackFu to resize images. The image_processing gem is used to relay commands to Imagemagick, which is a seperate program that must be installed locally. Heroku has it installed by default.
+* Rspec, used to test the Ruby application via automated testing. It is the most frequently used testing library for Ruby in production applications. Automated testing prevents regression and speeds up development and leads to writing better code.
+* Devise, a popular third party authentication framework that handles all the controllers, models, and views that relate to authentication.  The gem comes with many different modules that allow for customization. The final product of adding the Devise gem, allows the rails application to create a login and signup form.
+* Cloudinary, Font-Awesome & Stripe gems, which interface with Cloudinary, font-awesome and Stripe; third party services described in more detail in question 10.
+* dotenv-rails, a gem that allows for simple implementation of environment variables for development and testing environments. It's important to keep passwords in a file which is not pushed to remote references. Dotenv provides simple facility for doing this.
 
 ## 6. Identify the database to be used in your App and provide a justification for your choice.
 
@@ -158,39 +144,35 @@ See above in question 8.
 
 ## 10. Detail any third party services that your App will use.
 
-* Cloudinary
-** A third party, cloud-based service that provides an end-to-end image and video management solution. The software is used so that video and images are not limited to local storage and can be accessed anywhere in the world.
-* Stripe
-** A third party online payment service that handles all the clients' transactions. Using server checkout allows the rails application to handle payments without storing the clients information on your server which prevents any stolen card information if the application were breached, and shifts the enormous burden of regulatory compliance in various jurisdictions to Stripe.
-* Font Awesome
-** Used to display social media icons. Font awesome maintains a large collection of icons which look great and are regularly updated. Using their service lowers SnackFu's maintenance burden, as we don't need to worry about creating and updating icons as social media services come, go, and perform redesigns.
-* Heroku
-** A platform as a service that allows developers to deploy and monitor their software. Using Heroku allows the app to be accessed any where in the world. See question 4 for more detail.
-* Git
-** Not used by the app as such, but integral to its development. Also used to to deploy to Heroku. For more detail on its use in development, see question below.
+* Cloudinary, a third party, cloud-based service that provides an end-to-end image and video management solution. The software is used so that video and images are not limited to local storage and can be accessed anywhere in the world.
+* Stripe, a third party online payment service that handles all the clients' transactions. Using server checkout allows the rails application to handle payments without storing the clients information on your server which prevents any stolen card information if the application were breached, and shifts the enormous burden of regulatory compliance in various jurisdictions to Stripe.
+* Font Awesome. Used to display social media icons. Font awesome maintains a large collection of icons which look great and are regularly updated. Using their service lowers SnackFu's maintenance burden, as we don't need to worry about creating and updating icons as social media services come, go, and perform redesigns.
+* Heroku, a platform as a service that allows developers to deploy and monitor their software. Using Heroku allows the app to be accessed any where in the world. See question 4 for more detail.
+* Git, a version control system. Not used by the app as such, but integral to its development. Also used to to deploy to Heroku. For more detail on its use in development, see question below.
 
-  
+## 11. Describe (in general terms) the data structure of marketplace apps that are similar to your own (e.g. eBay, Airbnb).
 
-## Describe (in general terms) the data structure of marketplace apps that are similar to your own (e.g. eBay, Airbnb).
+Most purchased goods marketplaces are similar to our own as they all follow the same structure for user accessibility. These sites include; Ebay, Gumtree, Amazon, Etzy, etc. Data is modeled in a similar way but a greater variety of information is stored.
 
-Most purchased goods marketplaces are similar to our own as they all follow the same structure for user accessibility. These sites include; Ebay, Gumtree, Amazon, Etzy, etc.
+## 12. Discuss the database relations to be implemented.
 
-## Discuss the database relations to be implemented.
+Refer to ERD diagram above.
 
-Refer to ERD diagram above
-A User has a one to many relationship with an Order and a one to many relationship with a Listing. A Listing has a one to many relationship with a review. An Order has a many to many relationship with a listing.
-
-## Describe your project’s models in terms of the relationships (active record associations) they have with each other.
+## 13. Describe your project’s models in terms of the relationships (active record associations) they have with each other.
 
 Users model has_many listings
 
+Listing model belongs to user
+
 Users model has_many orders
 
-Listing model has_many order
+Order model belongs to user
 
-Orders model has_many listings
+Listing model has_many orders
 
-Lisitng model has_many reviews ???
+Orders model belongs to listing
+
+Lisitng model has_many reviews
 
 Reviews belong_to Listings
 
@@ -200,11 +182,13 @@ Address belongs_to Listings
 
 Address belongs_to Order
 
-## Provide your database schema design.
+Address belongs to all three because this was the best way to implement a polymorphic relationship for our use case. A small amount of logic built into the model keeps the database normalised and makes garbage collection automatic when whatever entity the address belongs to is deleted. Rails' standard implementation of polymorphic relationships (using belongs_to user as: addressable) is not as good as hand-implementing polymorphism with exclusive belongs_to logic.
+
+## 14. Provide your database schema design.
 
 Provided above.
 
-## Provide User stories for your App.
+## 15. Provide User stories for your App.
 
 US1: As a user I can register an account
 
@@ -228,32 +212,38 @@ US10: As a user I can edit my listing
 
 US11: As a user I can delete my listing
 
-## Provide Wireframes for your App.
+## 16. Provide Wireframes for your App.
 
 Wireframes provided above
 
-## Describe the way tasks are allocated and tracked in your project.
+## 18. Describe the way tasks are allocated and tracked in your project.
 
 The team set all tasks on a Trello Board where you allocate tasks individually and mark them for review. Once the team has reviewed the task the it is marked as done.
 
-## Discuss how Agile methodology is being implemented in your project.
+## 19. Discuss how Agile methodology is being implemented in your project.
 
 Each Trello task has been assigned a timeframe based on the complexity and length of that task. Tasks are labeled and sorted by shirt sizes (XS - XL), colors and time lengths. When a team member chooses to do a task, they drag that task from the "To-do" secton into the "Doing" section. Once that task is completed, the task is dragged into the review secton where the other team members merge the updated app and review. Once all memebers have the updated code and have reviewed it, the task is then dragged into the "Done" section.
 
-## Provide an overview and description of your Source control process.
+We regularly reviewed the project's progress and adjusted our priorities accordingly.
 
-Source control is the process of logging and controlling changes made to the application so that they can be recalled if need be. The method we used was local version control where individuals could work from their own systems and code different sections. They would create a feature branch and once completed section they would merge it with the master branch then push it up to github. This method while helpful in the fact we could all work on separate tasks, has created many conflicts. This has resulted in reverting to older commits.
+## 20. Provide an overview and description of your Source control process.
 
-## Provide an overview and description of your Testing process.
+Source control is the process of logging and controlling changes made to the application so that they can be recalled if need be. The method we used was local version control where individuals could work from their own systems and code different sections. They would create a feature branch and once completed section they would merge it with the master branch, push it up to github, and create a pull request. Once on github, the Heroku maintainer would check that the code deploys to production without issue and then merge the pull request into the master branch. 
 
-## Discuss and analyse requirements related to information system security.
+## 21. Provide an overview and description of your Testing process.
+
+Rspec was used for unit testing.
+
+During the initial stages of the project, we spend a fair amount of time installing gems and checking their basic functionality worked on all our system environments and on Heroku. This process, while initially time-consuming, freed us to develop our own sections of the code without too much concern for technical issues. The code was still regularly checked on Heroku just in case, but code deployed to it without issue past day 3 of the project.
+
+## 22. Discuss and analyse requirements related to information system security.
 
 Information System Security refers to the process of keeping user data safe and secure. This is covered in more detail on questions 22 and 23.
 
-## Discuss methods you will use to protect information and data.
+## 23. Discuss methods you will use to protect information and data.
 
 For this project we use Devise which is a third party technology that handles the users authentication. Devise use B-crypt to securely store user data and they have thousands of hours of code review and testing making them the most used authentication framework. We also use a third party company for payment information called Stripe. Being a company that handles sensitive information, they take security very seriously and in doing so, they only store user data on their own servers.
 
-## Research what your legal obligations are in relation to handling user data.
+## 24. Research what your legal obligations are in relation to handling user data.
 
 Under the Privacy Act 1988, users data is protected from things such as; misuse, loss, and unauthorised access.  We are obligated under law not to use user data in any way where not authorised.
