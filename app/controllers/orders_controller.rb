@@ -20,11 +20,11 @@ class OrdersController < ApplicationController
         currency: 'aud',
         quantity: 1,
       }],
-      success_url: url_for(action: "success"), #orders_path action: "POST",
+      success_url: 'http://localhost:3000/success',
       cancel_url: 'http://localhost:3000/cancel',
     )
   end
   
-  def success
+  def create
   end
 end

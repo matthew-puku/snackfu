@@ -1,24 +1,32 @@
 <h1>Your Order</h1>
 
 <table>
-<tr>
-  <td><%= @listing.name %></td>
-  <td>1</td> <!-- quantity -->
-  <td><%= number_to_currency(@listing.price) %></td>
-</tr>
-<tr>
-  <td colspan="2">Shipping from <%= @listing.address.country %></td>
-  <td>FREE</td>
-</tr>
-<tr>
-  <td colspan="2">Total</td>
-  <td><%= number_to_currency(@listing.price) %></td>
+  <tr>
+    <td colspan="3">
+      <%= if @listing.image.attached?
+        image_tag(@listing.image.variant(resize: "100x100"))
+      else
+        "No image available" 
+      end %>
+  </td>
+  </tr>
+  <tr>
+    <td><%= @listing.name %></td>
+    <td>1</td> <!-- quantity -->
+    <td><%= number_to_currency(@listing.price) %></td>
+  </tr>
+  <tr>
+    <td colspan="2">Shipping from <%= @listing.address.country %></td>
+    <td>FREE</td>
+  </tr>
+  <tr>
+    <td colspan="2">Total</td>
+    <td><%= number_to_currency(@listing.price) %></td>
+  </tr>
 </table>
 <p>
   <button id="checkout">Checkout</button>
 </p>
-
-<%= @stripe_checkout_session.success_url %>
 
 <script src="https://js.stripe.com/v3/"></script>
 
