@@ -1,41 +1,47 @@
 <h1>Your Order</h1>
 
 <table>
-<tr>
-  <th>Name</th>
-  <th>Description</th>
-  <th>Price</th>
-</tr>
-<tr>
-  <td><%= @listing.name %></td>
-  <td><%= @listing.description %></td>
-  <td><%= number_to_currency(@listing.price) %></td>
-</tr>
-<tr>
-    <th colspan="2">Total</th>
-    <th><%= number_to_currency(@listing.price) %></th>
+  <tr>
+    <td colspan="3">
+      <%= if @listing.image.attached?
+        image_tag(@listing.image.variant(resize: "100x100"))
+      else
+        "No image available" 
+      end %>
+  </td>
+  </tr>
+  <tr>
+    <td><%= @listing.name %></td>
+    <td>1</td> <!-- quantity -->
+    <td><%= number_to_currency(@listing.price) %></td>
+  </tr>
+  <tr>
+    <td colspan="2">Shipping from <%= @listing.address.country %></td>
+    <td>FREE</td>
+  </tr>
+  <tr>
+    <td colspan="2">Total</td>
+    <td><%= number_to_currency(@listing.price) %></td>
+  </tr>
 </table>
 <p>
-  @listing.image.url
-</p>
-<P>
-    <button>Checkout</button>
+  <button id="checkout">Checkout</button>
 </p>
 
 <script src="https://js.stripe.com/v3/"></script>
 
 <script>
-    var stripe = Stripe('pk_test_r1EmAHl6wPYYC0jA3wwdTYHC00JafccmBa');
+  var stripe = Stripe('pk_test_r1EmAHl6wPYYC0jA3wwdTYHC00JafccmBa');
 
-    function goToCheckout() {
-    stripe.redirectToCheckout({
-    sessionId: '<%= @stripe_checkout_session.id %>',
-    }).then(function (result) {
-    // If `redirectToCheckout` fails due to a browser or network
-    // error, display the localized error message to your customer
-    // using `result.error.message`.
-    });
-    }
-    var button = document.querySelector('button');
-    button.addEventListener('click', goToCheckout);
+  function goToCheckout() {
+  stripe.redirectToCheckout({
+  sessionId: '<%= @stripe_checkout_session.id %>',
+  }).then(function (result) {
+  // If `redirectToCheckout` fails due to a browser or network
+  // error, display the localized error message to your customer
+  // using `result.error.message`.
+  });
+  }
+  var button = document.querySelector('#checkout');
+  button.addEventListener('click', goToCheckout);
 </script>

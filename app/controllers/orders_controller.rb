@@ -1,16 +1,21 @@
 class OrdersController < ApplicationController
   def new
-    the_listing_id = params[:listing_id]
-    @listing = Listing.find(the_listing_id)
+    @order = Order.new(
+      listing: Listing.find(params[:listing_id]),
+      user: current_user,
+      )
+    @listing = @order.listing
+    @buyer = @order.user
 
     Stripe.api_key = ENV['STRIPE_API_KEY_SECRET']
 
     @stripe_checkout_session = Stripe::Checkout::Session.create(
+      # customer_email: @buyer.email,
       payment_method_types: ['card'],
       line_items: [{
         name: @listing.name,
         description: @listing.description,
-        images: @listing.image.url,
+        # images: @listing.image,
         amount: (@listing.price * 100).to_i ,
         currency: 'aud',
         quantity: 1,
