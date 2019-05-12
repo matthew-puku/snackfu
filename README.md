@@ -24,8 +24,6 @@ Post listings to sell snacks
 Edit their profile
 Edit their lisitings
 
-## Screenshots
-
 ## Tech stack (e.g. html, css, deployment platform, etc)
 
 Snackfu is a Ruby on Rails app, deployed on Heroku. It uses Postgres as a database. Ruby on Rails depends on html, css and sass. We also used bootstrap because our main frontend developer was more familiar with it than with newer native CSS. It also runs more reliably on IE =]
